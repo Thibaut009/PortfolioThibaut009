@@ -83,7 +83,7 @@
     "titlePrefix": "Mes",
     "titleHighlight": "projets",
     "description": "Une sélection de projets récents, la majorité construits avec Angular pour le frontend et un backend Java / Node selon le contexte.",
-    "filters": ["Tous", "Angular", "Frontend", "Backend", "Full Stack"],
+    "filters": ["Tous", "Angular", "Spring Boot", "Next.js", "React"],
     "items": [
       {
         "title": "Freelance Management SaaS",
@@ -122,8 +122,6 @@
         "codeLabel": "GitHub"
       }
     ],
-    "kanbanLabel": "Board Kanban",
-    "soonLabel": "Bientôt",
     "footerLine1": "Vous avez un projet en tête ?",
     "footerLine2": "Je suis toujours partant à discuter d'idées.",
     "footerCta": "Me contacter →"

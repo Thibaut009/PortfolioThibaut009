@@ -87,58 +87,8 @@ function ProjectThumb({ project }: { project: (typeof projects.items)[number] })
               height: "60%",
               border: "1px dashed rgba(139,92,246,.4)",
               borderRadius: 10,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "var(--text-dimmer)",
-              fontSize: ".7rem",
             }}
-          >
-            {projects.kanbanLabel}
-          </div>
-        </div>
-      );
-    case "lines":
-      return (
-        <div className="proj-thumb">
-          {project.angular && <span className="proj-badge">◈ Angular</span>}
-          <div style={{ display: "flex", flexDirection: "column", gap: 6, width: "70%" }}>
-            <div
-              style={{
-                height: 8,
-                borderRadius: 4,
-                background: "rgba(59,130,246,.4)",
-                width: "80%",
-              }}
-            />
-            <div
-              style={{
-                height: 8,
-                borderRadius: 4,
-                background: "rgba(139,92,246,.4)",
-                width: "60%",
-              }}
-            />
-            <div
-              style={{
-                height: 8,
-                borderRadius: 4,
-                background: "rgba(59,130,246,.4)",
-                width: "90%",
-              }}
-            />
-          </div>
-        </div>
-      );
-    case "soon":
-      return (
-        <div className="proj-thumb" style={{ opacity: 0.55 }}>
-          <span
-            className="proj-badge"
-            style={{ borderColor: "var(--border)", color: "var(--text-dim)" }}
-          >
-            {projects.soonLabel}
-          </span>
+          />
         </div>
       );
   }
@@ -148,9 +98,9 @@ export default function ProjectsSection() {
   const [activeFilter, setActiveFilter] = useState(projects.filters[0]);
 
   const filteredItems =
-    activeFilter === "Angular"
-      ? projects.items.filter((project) => project.angular)
-      : projects.items;
+    activeFilter === "Tous"
+      ? projects.items
+      : projects.items.filter((project) => project.tags.includes(activeFilter));
 
   return (
     <section id="projects">
