@@ -1,21 +1,44 @@
-const TECH_SKILLS = [
-  { name: "◈ Angular", pct: 95, angular: true },
-  { name: "React / Next.js", pct: 85 },
-  { name: "TypeScript", pct: 90 },
-  { name: "Tailwind CSS", pct: 88 },
-  { name: "Node.js", pct: 82 },
-  { name: "Spring Boot", pct: 78 },
-  { name: "Base de données", pct: 80 },
-  { name: "Outils & DevOps", pct: 75 },
+const TECH_CATEGORIES = [
+  {
+    label: "Frontend",
+    skills: [
+      { name: "Angular", color: "#dd0031" },
+      { name: "TypeScript", color: "#3178c6" },
+      { name: "React / Next.js", color: "#61dafb" },
+      { name: "Tailwind CSS", color: "#38bdf8" },
+    ],
+  },
+  {
+    label: "Backend",
+    skills: [
+      { name: "Node.js", color: "#68a063" },
+      { name: "Spring Boot", color: "#f97316" },
+    ],
+  },
+  {
+    label: "Données",
+    skills: [
+      { name: "PostgreSQL", color: "#4169e1" },
+      { name: "MongoDB", color: "#47a248" },
+    ],
+  },
+  {
+    label: "Outils & DevOps",
+    skills: [
+      { name: "Docker", color: "#2496ed" },
+      { name: "AWS", color: "#ff9900" },
+      { name: "Git", color: "#f05033" },
+    ],
+  },
 ];
 
 const SOFT_SKILLS = [
-  { name: "UI/UX Design", filled: 3 },
-  { name: "Responsive Design", filled: 4 },
-  { name: "Performance", filled: 4 },
-  { name: "SEO", filled: 3 },
-  { name: "Agile / Scrum", filled: 4 },
-  { name: "Communication", filled: 5 },
+  "🎯 UI/UX Design",
+  "📱 Responsive Design",
+  "⚡ Performance",
+  "🔍 SEO",
+  "🔁 Agile / Scrum",
+  "💬 Communication",
 ];
 
 const sectionLabelStyle = {
@@ -42,17 +65,15 @@ export default function Skills() {
           <div className="skill-block">
             <h4>Compétences techniques</h4>
 
-            {TECH_SKILLS.map((skill) => (
-              <div className="skill-item" key={skill.name}>
-                <div className="top">
-                  <b>{skill.name}</b>
-                  <span>{skill.pct}%</span>
-                </div>
-                <div className="bar-track">
-                  <div
-                    className={`bar-fill${skill.angular ? " angular" : ""}`}
-                    style={{ width: `${skill.pct}%` }}
-                  />
+            {TECH_CATEGORIES.map((category) => (
+              <div key={category.label} style={{ marginBottom: 24 }}>
+                <h5 style={{ ...sectionLabelStyle, marginBottom: 12 }}>{category.label}</h5>
+                <div className="chip-row">
+                  {category.skills.map((skill) => (
+                    <div className="chip" key={skill.name}>
+                      <i style={{ background: skill.color }} /> {skill.name}
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
@@ -60,15 +81,10 @@ export default function Skills() {
 
           <div>
             <h4 style={{ ...sectionLabelStyle, marginBottom: 20 }}>Autres compétences</h4>
-            <div className="softskill-list">
+            <div className="tools-row" style={{ marginBottom: 30 }}>
               {SOFT_SKILLS.map((soft) => (
-                <div className="softskill-row" key={soft.name}>
-                  {soft.name}
-                  <span className="stars-ic">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <i key={i} className={i >= soft.filled ? "off" : ""} />
-                    ))}
-                  </span>
+                <div className="tool-pill" key={soft}>
+                  {soft}
                 </div>
               ))}
             </div>
