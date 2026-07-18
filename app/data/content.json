@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Thibaut — Full Stack Developer",
+    "title": "Thibaut | Full Stack Developer",
     "description": "Portfolio de Thibaut, développeur Full Stack spécialisé Angular, TypeScript, Node.js et Spring Boot."
   },
   "nav": {
@@ -82,7 +82,7 @@
     "tag": "Portfolio",
     "titlePrefix": "Mes",
     "titleHighlight": "projets",
-    "description": "Une sélection de projets récents, la majorité construits avec Angular pour le frontend et un backend Java / Node selon le contexte client.",
+    "description": "Une sélection de projets récents, la majorité construits avec Angular pour le frontend et un backend Java / Node selon le contexte.",
     "filters": ["Tous", "Angular", "Frontend", "Backend", "Full Stack"],
     "items": [
       {
@@ -150,7 +150,7 @@
     "tag": "Savoir-faire",
     "titlePrefix": "Mes",
     "titleHighlight": "compétences",
-    "description": "Technologies frontend, backend et outils que j'utilise au quotidien — avec Angular comme socle principal de mes développements.",
+    "description": "Technologies frontend, backend et outils que j'utilise au quotidien, avec Angular comme socle principal de mes développements.",
     "technicalLabel": "Compétences techniques",
     "categories": [
       {
@@ -278,9 +278,9 @@
     }
   },
   "footer": {
-    "copyright": "© 2026 Thibaut — Full Stack Developer. Tous droits réservés.",
+    "copyright": "© 2026 Thibaut | Full Stack Developer. Tous droits réservés.",
     "signaturePrefix": "Conçu avec",
     "signatureSuffix": "et beaucoup de",
-    "signatureHighlight": "Angular"
+    "signatureHighlight": "rêve"
   }
 }
