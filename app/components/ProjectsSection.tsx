@@ -255,7 +255,12 @@ export default function ProjectsSection() {
                   ))}
                 </div>
                 <div className="proj-links">
-                  <a className="primary" href="#">
+                  <a
+                    className="primary"
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {project.demoLabel}
                   </a>
                   <a href="#">{project.codeLabel}</a>

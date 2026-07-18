@@ -88,6 +88,7 @@
         "tags": ["Angular", "Spring Boot", "PostgreSQL"],
         "angular": true,
         "thumb": "invoice",
+        "demoUrl": "https://wingflow.thibaut009.com/",
         "demoLabel": "Live Demo",
         "codeLabel": "GitHub"
       },
@@ -97,6 +98,7 @@
         "tags": ["Next.js", "Socket.IO"],
         "angular": false,
         "thumb": "moon",
+        "demoUrl": "https://moon-call.thibaut009.com/",
         "demoLabel": "Live Demo",
         "codeLabel": "GitHub"
       },
@@ -106,6 +108,7 @@
         "tags": ["Angular", "AdonisJS", "PostgreSQL"],
         "angular": true,
         "thumb": "chat",
+        "demoUrl": "https://keychat.thibaut009.com/",
         "demoLabel": "Live Demo",
         "codeLabel": "GitHub"
       },
@@ -115,6 +118,7 @@
         "tags": ["React", "Vite"],
         "angular": false,
         "thumb": "hangman",
+        "demoUrl": "#",
         "demoLabel": "Live Demo",
         "codeLabel": "GitHub"
       }
