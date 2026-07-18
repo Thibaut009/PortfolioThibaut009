@@ -41,7 +41,7 @@
       { "platform": "twitter", "title": "Twitter", "href": "#" },
       { "platform": "email", "title": "Email", "href": "mailto:gabet.thibaut@gmail.com" }
     ],
-    "terminalCommand": "npm run dev",
+    "terminalCommand": "ng serve",
     "terminalOutput": "✓ ready in 2.2s",
     "avatarCode": "</> developer",
     "shieldLabel": "◈ Angular first",
