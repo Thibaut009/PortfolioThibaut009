@@ -17,7 +17,7 @@
     "burgerLabel": "Ouvrir le menu"
   },
   "hero": {
-    "badge": "Disponible pour travailler",
+    "badge": "En recherche d'un CDI",
     "greeting": "Salut 👋",
     "introPrefix": "Je suis",
     "name": "Thibaut",
@@ -62,13 +62,13 @@
     "titleLine1": "Passionné par le code",
     "titlePrefix": "et les",
     "titleHighlight": "bonnes expériences",
-    "description": "Développeur Full Stack basé sur Lille, j'aide les entreprises et les startups à créer des applications web modernes, performantes et centrées sur l'utilisateur — avec Angular comme spécialité de prédilection côté frontend.",
+    "description": "Diplômé d'un Master en Développement Full Stack à MyDigitalSchool Lille, j'ai passé 3 ans en alternance chez Kapela Constellation en tant que Développeur Full Stack, où j'ai conçu et développé des applications web complètes, du frontend (Angular, React) au backend (Spring Boot, Laravel, Symfony, .NET). Aujourd'hui à la recherche d'un poste en CDI, à l'aise en gestion de projet, gestion des versions et conception de bases de données, j'aborde chaque problème avec un esprit d'analyse et de résolution rigoureux.",
     "avatarAlt": "Thibaut - avatar 3D développeur",
     "info": [
       { "label": "Nom", "value": "Thibaut" },
       { "label": "Email", "value": "gabet.thibaut@gmail.com" },
       { "label": "Localisation", "value": "Lille, France" },
-      { "label": "Disponibilité", "value": "Disponible pour travailler" }
+      { "label": "Disponibilité", "value": "En recherche d'un CDI" }
     ],
     "cta": "Me contacter →",
     "stats": [
@@ -165,8 +165,11 @@
       {
         "label": "Backend",
         "skills": [
+          { "name": "Spring Boot", "color": "#f97316" },
           { "name": "Node.js", "color": "#68a063" },
-          { "name": "Spring Boot", "color": "#f97316" }
+          { "name": "Laravel", "color": "#ff2d20" },
+          { "name": "Symfony", "color": "#000000" },
+          { "name": ".NET", "color": "#512bd4" }
         ]
       },
       {
@@ -200,13 +203,13 @@
     "tag": "Parcours",
     "titlePrefix": "Mon",
     "titleHighlight": "expérience",
-    "description": "Un parcours orienté frontend Angular, du développement junior à des missions full stack en agence.",
+    "description": "Un parcours en alternance chez Kapela, du stage de découverte à l'alternance, en parallèle d'un Master en Développement Full Stack.",
     "timeline": [
       {
         "date": "Août 2023 — Juillet 2026",
         "title": "Développeur Full Stack",
         "company": "Kapela Constellation - Alternance (3 ans)",
-        "description": "Développement d'applications Angular / Spring Boot pour des clients variés, de la conception à la mise en production."
+        "description": "Développement d'applications Angular / Spring Boot pour des clients variés, de la conception à la mise en production, ainsi que des projets en Laravel, Symfony et .NET."
       },
       {
         "date": "Janvier / Février 2023",
@@ -223,20 +226,20 @@
     ],
     "educationLabel": "Formation",
     "education": [
-      { 
-        "date": "2024 — 2026", 
+      {
+        "date": "2024 — 2026",
         "title": "MBA Développeur Full-stack", 
         "company": "MyDigitalSchool, Lille"
       },
-      { 
-        "date": "2023 — 2024", 
+      {
+        "date": "2023 — 2024",
         "title": "Bachelor Développeur Web", 
-        "company": "MyDigitalSchool, Lille" 
+        "company": "MyDigitalSchool, Lille"
       },
-      { 
-        "date": "2021 — 2023", 
-        "title": "BTS SIO option SLAM", 
-        "company": "Lycée Dampierre, Valenciennes" 
+      {
+        "date": "2021 — 2023",
+        "title": "BTS SIO option SLAM",
+        "company": "Lycée Dampierre, Valenciennes"
       }
     ],
     "certificationsLabel": "Certifications",
@@ -254,7 +257,7 @@
       { "icon": "✉️", "label": "Email", "value": "gabet.thibaut@gmail.com" },
       { "icon": "📞", "label": "Téléphone", "value": "+33 7 81 30 74 97" },
       { "icon": "📍", "label": "Localisation", "value": "Lille, France" },
-      { "icon": "🟢", "label": "Disponibilité", "value": "Disponible pour travailler" }
+      { "icon": "🟢", "label": "Disponibilité", "value": "En recherche d'un CDI" }
     ],
     "socials": [
       { "label": "in", "href": "#" },
