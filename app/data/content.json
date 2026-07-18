@@ -48,13 +48,13 @@
     "stackLabel": "STACK TECH",
     "stack": [
       { "icon": "angular", "label": "Angular", "featured": true },
-      { "icon": "☕", "label": "Spring Boot" },
-      { "icon": "🐘", "label": "PostgreSQL" },
-      { "icon": "▲", "label": "Next.js" },
-      { "icon": "TS", "label": "TypeScript" },
-      { "icon": "⬢", "label": "Node.js" },
-      { "icon": "🐳", "label": "Docker" },
-      { "icon": "☁️", "label": "Hostinger" }
+      { "icon": "springboot", "label": "Spring Boot" },
+      { "icon": "postgresql", "label": "PostgreSQL" },
+      { "icon": "nextjs", "label": "Next.js" },
+      { "icon": "typescript", "label": "TypeScript" },
+      { "icon": "nodejs", "label": "Node.js" },
+      { "icon": "docker", "label": "Docker" },
+      { "icon": "hostinger", "label": "Hostinger" }
     ]
   },
   "about": {
@@ -62,7 +62,7 @@
     "titleLine1": "Passionné par le code",
     "titlePrefix": "et les",
     "titleHighlight": "bonnes expériences",
-    "description": "Développeur Full Stack basé en France, j'aide les entreprises et les startups à créer des applications web modernes, performantes et centrées sur l'utilisateur — avec Angular comme spécialité de prédilection côté frontend.",
+    "description": "Développeur Full Stack basé sur Lille, j'aide les entreprises et les startups à créer des applications web modernes, performantes et centrées sur l'utilisateur — avec Angular comme spécialité de prédilection côté frontend.",
     "avatarAlt": "Thibaut - avatar 3D développeur",
     "info": [
       { "label": "Nom", "value": "Thibaut" },

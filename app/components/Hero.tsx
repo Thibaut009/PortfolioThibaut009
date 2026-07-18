@@ -1,6 +1,6 @@
 import Image from "next/image";
 import AngularShield from "./AngularShield";
-import AngularLogo from "./AngularLogo";
+import TechIcon from "./TechIcon";
 import SocialIcon from "./SocialIcon";
 import content from "../data/content.json";
 
@@ -113,7 +113,7 @@ export default function Hero() {
             {hero.stack.map((item) => (
               <div className={`stack-icon${item.featured ? " featured" : ""}`} key={item.label}>
                 <div className="ic">
-                  {item.icon === "angular" ? <AngularLogo size={30} /> : item.icon}
+                  <TechIcon name={item.icon} size={30} />
                 </div>
                 <span>{item.label}</span>
               </div>
