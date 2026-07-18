@@ -37,7 +37,6 @@
     "socials": [
       { "platform": "github", "title": "GitHub", "href": "https://github.com/Thibaut009" },
       { "platform": "linkedin", "title": "LinkedIn", "href": "https://www.linkedin.com/in/thibaut-gabet-8393a4207/" },
-      { "platform": "twitter", "title": "Twitter", "href": "#" },
       { "platform": "email", "title": "Email", "href": "mailto:gabet.thibaut@gmail.com" }
     ],
     "terminalCommand": "ng serve",
@@ -73,7 +72,6 @@
     "stats": [
       { "num": "15+", "label": "Projets réalisés" },
       { "num": "3+", "label": "Années d'expérience" },
-      { "num": "15+", "label": "Clients satisfaits" },
       { "num": "100%", "label": "Passionné" }
     ]
   },
