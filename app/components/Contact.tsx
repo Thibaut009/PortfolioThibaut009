@@ -27,7 +27,13 @@ export default function Contact() {
             ))}
             <div className="socials" style={{ marginTop: 24 }}>
               {hero.socials.map((social) => (
-                <a href={social.href} title={social.title} key={social.platform}>
+                <a
+                  href={social.href}
+                  title={social.title}
+                  key={social.platform}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SocialIcon platform={social.platform} />
                 </a>
               ))}

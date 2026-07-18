@@ -59,7 +59,13 @@ export default function Hero() {
             </div>
             <div className="socials">
               {hero.socials.map((social) => (
-                <a href={social.href} title={social.title} key={social.platform}>
+                <a
+                  href={social.href}
+                  title={social.title}
+                  key={social.platform}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SocialIcon platform={social.platform} />
                 </a>
               ))}

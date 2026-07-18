@@ -27,17 +27,16 @@
     "descriptionSuffix": "comme technologie de référence côté frontend et Spring Boot côté backend.",
     "chips": [
       { "label": "Angular", "color": "#dd0031" },
-      { "label": "TypeScript", "color": "#3178c6" },
-      { "label": "Node.js", "color": "#68a063" },
+      { "label": "Spring Boot", "color": "#68a063" },
       { "label": "PostgreSQL", "color": "#4169e1" },
-      { "label": "Spring Boot", "color": "#f97316" }
+      { "label": "React / Next.js", "color": "#61dafb" }
     ],
     "ctaPrimary": "Voir mes projets →",
     "ctaGhost": "Me contacter",
     "socialsLabel": "SUIVEZ-MOI",
     "socials": [
-      { "platform": "github", "title": "GitHub", "href": "#" },
-      { "platform": "linkedin", "title": "LinkedIn", "href": "#" },
+      { "platform": "github", "title": "GitHub", "href": "https://github.com/Thibaut009" },
+      { "platform": "linkedin", "title": "LinkedIn", "href": "https://www.linkedin.com/in/thibaut-gabet-8393a4207/" },
       { "platform": "twitter", "title": "Twitter", "href": "#" },
       { "platform": "email", "title": "Email", "href": "mailto:gabet.thibaut@gmail.com" }
     ],
@@ -50,9 +49,9 @@
       { "icon": "angular", "label": "Angular", "featured": true },
       { "icon": "springboot", "label": "Spring Boot" },
       { "icon": "postgresql", "label": "PostgreSQL" },
+      { "icon": "react", "label": "React" },
       { "icon": "nextjs", "label": "Next.js" },
-      { "icon": "typescript", "label": "TypeScript" },
-      { "icon": "nodejs", "label": "Node.js" },
+      { "icon": "adonisjs", "label": "AdonisJS" },
       { "icon": "docker", "label": "Docker" },
       { "icon": "hostinger", "label": "Hostinger" }
     ]
@@ -72,7 +71,7 @@
     ],
     "cta": "Me contacter →",
     "stats": [
-      { "num": "25+", "label": "Projets réalisés" },
+      { "num": "15+", "label": "Projets réalisés" },
       { "num": "3+", "label": "Années d'expérience" },
       { "num": "15+", "label": "Clients satisfaits" },
       { "num": "100%", "label": "Passionné" }
@@ -83,7 +82,7 @@
     "titlePrefix": "Mes",
     "titleHighlight": "projets",
     "description": "Une sélection de projets récents, la majorité construits avec Angular pour le frontend et un backend Java / Node selon le contexte.",
-    "filters": ["Tous", "Angular", "Spring Boot", "Next.js", "React"],
+    "filters": ["Tous", "Angular", "Spring Boot", "React", "Next.js"],
     "items": [
       {
         "title": "Freelance Management SaaS",
@@ -137,7 +136,6 @@
         "label": "Frontend",
         "skills": [
           { "name": "Angular", "color": "#dd0031" },
-          { "name": "TypeScript", "color": "#3178c6" },
           { "name": "React / Next.js", "color": "#61dafb" },
           { "name": "Tailwind CSS", "color": "#38bdf8" }
         ]
@@ -145,8 +143,8 @@
       {
         "label": "Backend",
         "skills": [
-          { "name": "Spring Boot", "color": "#f97316" },
-          { "name": "Node.js", "color": "#68a063" },
+          { "name": "Spring Boot", "color": "#68a063" },
+          { "name": "AdonisJS", "color": "#5A45FF" },
           { "name": "Laravel", "color": "#ff2d20" },
           { "name": "Symfony", "color": "#000000" },
           { "name": ".NET", "color": "#512bd4" }
@@ -164,7 +162,6 @@
         "label": "Outils & DevOps",
         "skills": [
           { "name": "Docker", "color": "#2496ed" },
-          { "name": "Hostinger", "color": "#4169e1" },
           { "name": "Git", "color": "#f05033" }
         ]
       }
@@ -177,7 +174,7 @@
       { "name": "Anglais", "level": "B1" }
     ],
     "toolsLabel": "Outils & utilitaires",
-    "tools": ["🖥 VS Code", "🖥 JetBrains", "🎨 Figma", "📮 Postman", "🐳 Docker", "🐙 GitHub", "▲ Vercel", "☁️ Hostinger"]
+    "tools": ["🖥 VS Code", "✨ Claude", "🎨 Figma", "📮 Postman", "🦊 GitLab", "🐙 GitHub", "▲ Vercel", "☁️ Hostinger"]
   },
   "experience": {
     "tag": "Parcours",
