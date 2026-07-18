@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import content from "./data/content.json";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -21,9 +22,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Thibaut — Full Stack Developer",
-  description:
-    "Portfolio de Thibaut, développeur Full Stack spécialisé Angular, TypeScript, Node.js et Spring Boot.",
+  title: content.meta.title,
+  description: content.meta.description,
 };
 
 export default function RootLayout({

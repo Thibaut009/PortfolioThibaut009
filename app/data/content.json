@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "title": "Thibaut — Full Stack Developer",
+    "description": "Portfolio de Thibaut, développeur Full Stack spécialisé Angular, TypeScript, Node.js et Spring Boot."
+  },
+  "nav": {
+    "logoText": "THIBAUT",
+    "links": [
+      { "href": "#top", "label": "Accueil" },
+      { "href": "#about", "label": "À propos" },
+      { "href": "#projects", "label": "Projets" },
+      { "href": "#skills", "label": "Compétences" },
+      { "href": "#experience", "label": "Expérience" },
+      { "href": "#contact", "label": "Contact" }
+    ],
+    "cvButton": "⬇ Télécharger CV",
+    "burgerLabel": "Ouvrir le menu"
+  },
+  "hero": {
+    "badge": "Disponible pour travailler",
+    "greeting": "Salut 👋",
+    "introPrefix": "Je suis",
+    "name": "Thibaut",
+    "role": "Full Stack Developer",
+    "descriptionPrefix": "Je conçois et développe des applications web modernes, performantes et scalables avec des expériences utilisateur exceptionnelles —",
+    "descriptionHighlight": "Angular",
+    "descriptionSuffix": "en fer de lance côté frontend.",
+    "chips": [
+      { "label": "Angular", "color": "#dd0031" },
+      { "label": "TypeScript", "color": "#3178c6" },
+      { "label": "Node.js", "color": "#68a063" },
+      { "label": "PostgreSQL", "color": "#4169e1" },
+      { "label": "Spring Boot", "color": "#f97316" }
+    ],
+    "ctaPrimary": "Voir mes projets →",
+    "ctaGhost": "Me contacter",
+    "socialsLabel": "SUIVEZ-MOI",
+    "socials": [
+      { "platform": "github", "title": "GitHub", "href": "#" },
+      { "platform": "linkedin", "title": "LinkedIn", "href": "#" },
+      { "platform": "twitter", "title": "Twitter", "href": "#" },
+      { "platform": "email", "title": "Email", "href": "mailto:gabet.thibaut@gmail.com" }
+    ],
+    "terminalCommand": "npm run dev",
+    "terminalOutput": "✓ ready in 2.2s",
+    "avatarCode": "</> developer",
+    "shieldLabel": "◈ Angular first",
+    "stackLabel": "STACK TECH",
+    "stack": [
+      { "icon": "angular", "label": "Angular", "featured": true },
+      { "icon": "☕", "label": "Spring Boot" },
+      { "icon": "🐘", "label": "PostgreSQL" },
+      { "icon": "▲", "label": "Next.js" },
+      { "icon": "TS", "label": "TypeScript" },
+      { "icon": "⬢", "label": "Node.js" },
+      { "icon": "🐳", "label": "Docker" },
+      { "icon": "☁️", "label": "Hostinger" }
+    ]
+  },
+  "about": {
+    "tag": "À propos de moi",
+    "titleLine1": "Passionné par le code",
+    "titlePrefix": "et les",
+    "titleHighlight": "bonnes expériences",
+    "description": "Développeur Full Stack basé en France, j'aide les entreprises et les startups à créer des applications web modernes, performantes et centrées sur l'utilisateur — avec Angular comme spécialité de prédilection côté frontend.",
+    "avatarAlt": "Thibaut - avatar 3D développeur",
+    "info": [
+      { "label": "Nom", "value": "Thibaut" },
+      { "label": "Email", "value": "gabet.thibaut@gmail.com" },
+      { "label": "Localisation", "value": "France" },
+      { "label": "Disponibilité", "value": "Disponible pour travailler" }
+    ],
+    "cta": "Me contacter →",
+    "stats": [
+      { "num": "25+", "label": "Projets réalisés" },
+      { "num": "3+", "label": "Années d'expérience" },
+      { "num": "15+", "label": "Clients satisfaits" },
+      { "num": "100%", "label": "Passionné" }
+    ]
+  },
+  "projects": {
+    "tag": "Portfolio",
+    "titlePrefix": "Mes",
+    "titleHighlight": "projets",
+    "description": "Une sélection de projets récents, la majorité construits avec Angular pour le frontend et un backend Java / Node selon le contexte client.",
+    "filters": ["Tous", "Angular", "Frontend", "Backend", "Full Stack"],
+    "items": [
+      {
+        "title": "SaaS Dashboard",
+        "description": "Dashboard analytics moderne pour une gestion complète des données clients.",
+        "tags": ["Angular", "TypeScript", "Chart.js"],
+        "angular": true,
+        "thumb": "bars",
+        "demoLabel": "Live Demo",
+        "codeLabel": "GitHub"
+      },
+      {
+        "title": "E-commerce Platform",
+        "description": "Plateforme e-commerce complète avec panier, paiement et dashboard admin.",
+        "tags": ["Angular", "NgRx", "Spring Boot"],
+        "angular": true,
+        "thumb": "cards",
+        "demoLabel": "Live Demo",
+        "codeLabel": "GitHub"
+      },
+      {
+        "title": "Portfolio Template",
+        "description": "Template de portfolio moderne et entièrement personnalisable.",
+        "tags": ["Next.js", "Framer Motion"],
+        "angular": false,
+        "thumb": "avatar",
+        "demoLabel": "Live Demo",
+        "codeLabel": "GitHub"
+      },
+      {
+        "title": "Task Management App",
+        "description": "Application de gestion de tâches façon Kanban avec drag & drop en temps réel.",
+        "tags": ["Angular", "Node.js", "Socket.io"],
+        "angular": true,
+        "thumb": "kanban",
+        "demoLabel": "Live Demo",
+        "codeLabel": "GitHub"
+      },
+      {
+        "title": "Real-time Chat App",
+        "description": "Messagerie instantanée avec salons, notifications et statuts de présence.",
+        "tags": ["React", "Node.js", "WebSocket"],
+        "angular": false,
+        "thumb": "lines",
+        "demoLabel": "Live Demo",
+        "codeLabel": "GitHub"
+      },
+      {
+        "title": "Landing Page",
+        "description": "Page d'atterrissage produit, optimisée conversion et performance.",
+        "tags": ["Angular", "Tailwind"],
+        "angular": false,
+        "thumb": "soon",
+        "demoLabel": "Live Demo",
+        "codeLabel": "GitHub"
+      }
+    ],
+    "kanbanLabel": "Board Kanban",
+    "soonLabel": "Bientôt",
+    "footerLine1": "Vous avez un projet en tête ?",
+    "footerLine2": "Je suis toujours partant à discuter d'idées.",
+    "footerCta": "Me contacter →"
+  },
+  "skills": {
+    "tag": "Savoir-faire",
+    "titlePrefix": "Mes",
+    "titleHighlight": "compétences",
+    "description": "Technologies frontend, backend et outils que j'utilise au quotidien — avec Angular comme socle principal de mes développements.",
+    "technicalLabel": "Compétences techniques",
+    "categories": [
+      {
+        "label": "Frontend",
+        "skills": [
+          { "name": "Angular", "color": "#dd0031" },
+          { "name": "TypeScript", "color": "#3178c6" },
+          { "name": "React / Next.js", "color": "#61dafb" },
+          { "name": "Tailwind CSS", "color": "#38bdf8" }
+        ]
+      },
+      {
+        "label": "Backend",
+        "skills": [
+          { "name": "Node.js", "color": "#68a063" },
+          { "name": "Spring Boot", "color": "#f97316" }
+        ]
+      },
+      {
+        "label": "Données",
+        "skills": [
+          { "name": "PostgreSQL", "color": "#4169e1" },
+          { "name": "MySQL", "color": "#f97316" },
+          { "name": "SQL Server", "color": "#38bdf8" }
+        ]
+      },
+      {
+        "label": "Outils & DevOps",
+        "skills": [
+          { "name": "Docker", "color": "#2496ed" },
+          { "name": "Hostinger", "color": "#4169e1" },
+          { "name": "Git", "color": "#f05033" }
+        ]
+      }
+    ],
+    "otherLabel": "Autres compétences",
+    "softSkills": ["🎯 UI/UX Design", "📱 Responsive Design", "⚡ Performance", "🔍 SEO", "🔁 Agile / Scrum", "💬 Communication"],
+    "languagesLabel": "Langues",
+    "languages": [
+      { "name": "Français", "level": "Natif", "highlight": true },
+      { "name": "Anglais", "level": "B1" }
+    ],
+    "toolsLabel": "Outils & utilitaires",
+    "tools": ["🖥 VS Code", "🖥 JetBrains", "🎨 Figma", "📮 Postman", "🐳 Docker", "🐙 GitHub", "▲ Vercel", "☁️ Hostinger"]
+  },
+  "experience": {
+    "tag": "Parcours",
+    "titlePrefix": "Mon",
+    "titleHighlight": "expérience",
+    "description": "Un parcours orienté frontend Angular, du développement junior à des missions full stack en agence.",
+    "timeline": [
+      {
+        "date": "Août 2023 — Juillet 2026",
+        "title": "Développeur Full Stack",
+        "company": "Kapela Constellation - Alternance (3 ans)",
+        "description": "Développement d'applications Angular / Spring Boot pour des clients variés, de la conception à la mise en production."
+      },
+      {
+        "date": "Janvier / Février 2023",
+        "title": "Développeur Full Stack",
+        "company": "Kapela Constellation - Stage (5 semaines)",
+        "description": "Développement d'interfaces Angular modernes et performantes pour des applications métier à fort trafic."
+      },
+      {
+        "date": "Avril 2021",
+        "title": "Développeur Frontend",
+        "company": "Easyteam Constellation - Stage (6 semaines)",
+        "description": "Premières expériences en développement web, montée en compétences sur l'écosystème Angular et Node.js."
+      }
+    ],
+    "educationLabel": "Formation",
+    "education": [
+      { 
+        "date": "2024 — 2026", 
+        "title": "MBA Développeur Full-stack", 
+        "company": "MyDigitalSchool, Lille"
+      },
+      { 
+        "date": "2023 — 2024", 
+        "title": "Bachelor Développeur Web", 
+        "company": "MyDigitalSchool, Lille" 
+      },
+      { 
+        "date": "2021 — 2023", 
+        "title": "BTS SIO option SLAM", 
+        "company": "Lycée Dampierre, Valenciennes" 
+      }
+    ],
+    "certificationsLabel": "Certifications",
+    "certifications": [
+      { "icon": "angular", "title": "Angular Certified Developer", "subtitle": "Certification officielle" },
+      { "icon": "☁️", "title": "AWS Certified Cloud Practitioner", "subtitle": "Amazon Web Services" },
+      { "icon": "📜", "title": "Scrum Fundamentals", "subtitle": "Agile / Scrum" }
+    ]
+  },
+  "contact": {
+    "tag": "Contact",
+    "titlePrefix": "Me",
+    "titleHighlight": "contacter",
+    "description": "Une idée de projet, une opportunité ou juste envie d'échanger ? N'hésitez pas à me contacter.",
+    "items": [
+      { "icon": "✉️", "label": "Email", "value": "gabet.thibaut@gmail.com" },
+      { "icon": "📞", "label": "Téléphone", "value": "+33 7 81 30 74 97" },
+      { "icon": "📍", "label": "Localisation", "value": "Lille, France" },
+      { "icon": "🟢", "label": "Disponibilité", "value": "Disponible pour travailler" }
+    ],
+    "socials": [
+      { "label": "in", "href": "#" },
+      { "label": "gh", "href": "#" },
+      { "label": "tw", "href": "#" },
+      { "label": "@", "href": "#" }
+    ],
+    "form": {
+      "nameLabel": "Nom",
+      "namePlaceholder": "Votre nom",
+      "emailLabel": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "subjectLabel": "Sujet",
+      "subjectPlaceholder": "Sujet de votre message",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Votre message...",
+      "submitLabel": "Envoyer le message →"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Thibaut — Full Stack Developer. Tous droits réservés.",
+    "signaturePrefix": "Conçu avec",
+    "signatureSuffix": "et beaucoup de",
+    "signatureHighlight": "Angular"
+  }
+}

@@ -1,75 +1,59 @@
+import content from "../data/content.json";
+
+const { contact } = content;
+const { form } = contact;
+
 export default function Contact() {
   return (
     <section id="contact">
       <div className="wrap">
-        <div className="section-tag">Contact</div>
+        <div className="section-tag">{contact.tag}</div>
         <h2 className="section-title">
-          Me <span className="grad">contacter</span>
+          {contact.titlePrefix} <span className="grad">{contact.titleHighlight}</span>
         </h2>
-        <p className="section-sub">
-          Une idée de projet, une opportunité ou juste envie d&apos;échanger ? N&apos;hésitez
-          pas à me contacter.
-        </p>
+        <p className="section-sub">{contact.description}</p>
 
         <div className="contact-grid">
           <div>
-            <div className="contact-item">
-              <div className="contact-ic">✉️</div>
-              <div>
-                <b>Email</b>
-                <span>alex.dev@exemple.com</span>
+            {contact.items.map((item) => (
+              <div className="contact-item" key={item.label}>
+                <div className="contact-ic">{item.icon}</div>
+                <div>
+                  <b>{item.label}</b>
+                  <span>{item.value}</span>
+                </div>
               </div>
-            </div>
-            <div className="contact-item">
-              <div className="contact-ic">📞</div>
-              <div>
-                <b>Téléphone</b>
-                <span>+33 6 12 34 56 78</span>
-              </div>
-            </div>
-            <div className="contact-item">
-              <div className="contact-ic">📍</div>
-              <div>
-                <b>Localisation</b>
-                <span>France</span>
-              </div>
-            </div>
-            <div className="contact-item">
-              <div className="contact-ic">🟢</div>
-              <div>
-                <b>Disponibilité</b>
-                <span>Disponible pour travailler</span>
-              </div>
-            </div>
+            ))}
             <div className="socials" style={{ marginTop: 24 }}>
-              <a href="#">in</a>
-              <a href="#">gh</a>
-              <a href="#">tw</a>
-              <a href="#">@</a>
+              {contact.socials.map((social) => (
+                <a href={social.href} key={social.label}>
+                  {social.label}
+                </a>
+              ))}
             </div>
           </div>
 
           <div className="form-card">
             <div className="form-row">
               <div>
-                <label>Nom</label>
-                <input type="text" placeholder="Votre nom" />
+                <label>{form.nameLabel}</label>
+                <input type="text" placeholder={form.namePlaceholder} />
               </div>
               <div>
-                <label>Email</label>
-                <input type="email" placeholder="votre@email.com" />
+                <label>{form.emailLabel}</label>
+                <input type="email" placeholder={form.emailPlaceholder} />
               </div>
             </div>
             <div className="full">
-              <label>Sujet</label>
-              <input type="text" placeholder="Sujet de votre message" />
+              <label>{form.subjectLabel}</label>
+              <input type="text" placeholder={form.subjectPlaceholder} />
             </div>
             <div>
-              <label>Message</label>
-              <textarea placeholder="Votre message..." />
+              <label>{form.messageLabel}</label>
+              <textarea placeholder={form.messagePlaceholder} />
             </div>
             <button className="btn-primary" style={{ width: "100%", justifyContent: "center" }}>
-              Envoyer le message →
+              {form.submitLabel}
             </button>
           </div>
         </div>

@@ -1,5 +1,8 @@
 import Image from "next/image";
 import AngularShield from "./AngularShield";
+import content from "../data/content.json";
+
+const { about } = content;
 
 export default function About() {
   return (
@@ -10,7 +13,7 @@ export default function About() {
             <Image
               className="char-img"
               src="/avatar-character.png"
-              alt="Thibaut - avatar 3D développeur"
+              alt={about.avatarAlt}
               width={327}
               height={772}
               style={{
@@ -26,59 +29,34 @@ export default function About() {
           </div>
 
           <div>
-            <div className="section-tag">À propos de moi</div>
+            <div className="section-tag">{about.tag}</div>
             <h2 className="section-title">
-              Passionné par le code
+              {about.titleLine1}
               <br />
-              et les <span className="grad">bonnes expériences</span>
+              {about.titlePrefix} <span className="grad">{about.titleHighlight}</span>
             </h2>
-            <p className="section-sub">
-              Développeur Full Stack basé en France, j&apos;aide les entreprises et les
-              startups à créer des applications web modernes, performantes et centrées sur
-              l&apos;utilisateur — avec Angular comme spécialité de prédilection côté
-              frontend.
-            </p>
+            <p className="section-sub">{about.description}</p>
 
             <div className="info-list">
-              <div className="info-row">
-                <b>Nom</b>
-                <span>Thibaut</span>
-              </div>
-              <div className="info-row">
-                <b>Email</b>
-                <span>alex.dev@exemple.com</span>
-              </div>
-              <div className="info-row">
-                <b>Localisation</b>
-                <span>France</span>
-              </div>
-              <div className="info-row">
-                <b>Disponibilité</b>
-                <span>Disponible pour travailler</span>
-              </div>
+              {about.info.map((row) => (
+                <div className="info-row" key={row.label}>
+                  <b>{row.label}</b>
+                  <span>{row.value}</span>
+                </div>
+              ))}
             </div>
 
             <a className="btn-primary" href="#contact">
-              Me contacter →
+              {about.cta}
             </a>
 
             <div className="stat-row">
-              <div className="stat-card">
-                <div className="num">25+</div>
-                <div className="lbl">Projets réalisés</div>
-              </div>
-              <div className="stat-card">
-                <div className="num">3+</div>
-                <div className="lbl">Années d&apos;expérience</div>
-              </div>
-              <div className="stat-card">
-                <div className="num">15+</div>
-                <div className="lbl">Clients satisfaits</div>
-              </div>
-              <div className="stat-card">
-                <div className="num">100%</div>
-                <div className="lbl">Passionné</div>
-              </div>
+              {about.stats.map((stat) => (
+                <div className="stat-card" key={stat.label}>
+                  <div className="num">{stat.num}</div>
+                  <div className="lbl">{stat.label}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

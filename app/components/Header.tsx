@@ -1,15 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import content from "../data/content.json";
 
-const NAV_LINKS = [
-  { href: "#top", label: "Accueil" },
-  { href: "#about", label: "À propos" },
-  { href: "#projects", label: "Projets" },
-  { href: "#skills", label: "Compétences" },
-  { href: "#experience", label: "Expérience" },
-  { href: "#contact", label: "Contact" },
-];
+const { logoText, links, cvButton, burgerLabel } = content.nav;
 
 export default function Header() {
   const [active, setActive] = useState("top");
@@ -36,10 +30,11 @@ export default function Header() {
     <header>
       <div className="nav">
         <div className="logo">
-          THIBAUT<span>.</span>
+          {logoText}
+          <span>.</span>
         </div>
         <ul className={`nav-links${menuOpen ? " open" : ""}`}>
-          {NAV_LINKS.map((link) => (
+          {links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
@@ -51,12 +46,8 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        <button className="btn-cv">⬇ Télécharger CV</button>
-        <button
-          className="burger"
-          aria-label="Ouvrir le menu"
-          onClick={() => setMenuOpen((v) => !v)}
-        >
+        <button className="btn-cv">{cvButton}</button>
+        <button className="burger" aria-label={burgerLabel} onClick={() => setMenuOpen((v) => !v)}>
           ☰
         </button>
       </div>

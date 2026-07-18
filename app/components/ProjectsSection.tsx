@@ -2,55 +2,11 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import content from "../data/content.json";
 
-const FILTERS = ["Tous", "Angular", "Frontend", "Backend", "Full Stack"];
+const { projects } = content;
 
-const PROJECTS = [
-  {
-    title: "SaaS Dashboard",
-    description: "Dashboard analytics moderne pour une gestion complète des données clients.",
-    tags: ["Angular", "TypeScript", "Chart.js"],
-    angular: true,
-    thumb: "bars" as const,
-  },
-  {
-    title: "E-commerce Platform",
-    description: "Plateforme e-commerce complète avec panier, paiement et dashboard admin.",
-    tags: ["Angular", "NgRx", "Spring Boot"],
-    angular: true,
-    thumb: "cards" as const,
-  },
-  {
-    title: "Portfolio Template",
-    description: "Template de portfolio moderne et entièrement personnalisable.",
-    tags: ["Next.js", "Framer Motion"],
-    angular: false,
-    thumb: "avatar" as const,
-  },
-  {
-    title: "Task Management App",
-    description: "Application de gestion de tâches façon Kanban avec drag & drop en temps réel.",
-    tags: ["Angular", "Node.js", "Socket.io"],
-    angular: true,
-    thumb: "kanban" as const,
-  },
-  {
-    title: "Real-time Chat App",
-    description: "Messagerie instantanée avec salons, notifications et statuts de présence.",
-    tags: ["React", "Node.js", "WebSocket"],
-    angular: false,
-    thumb: "lines" as const,
-  },
-  {
-    title: "Landing Page",
-    description: "Page d'atterrissage produit, optimisée conversion et performance.",
-    tags: ["Angular", "Tailwind"],
-    angular: false,
-    thumb: "soon" as const,
-  },
-];
-
-function ProjectThumb({ project }: { project: (typeof PROJECTS)[number] }) {
+function ProjectThumb({ project }: { project: (typeof projects.items)[number] }) {
   switch (project.thumb) {
     case "bars":
       return (
@@ -137,7 +93,7 @@ function ProjectThumb({ project }: { project: (typeof PROJECTS)[number] }) {
               fontSize: ".7rem",
             }}
           >
-            Board Kanban
+            {projects.kanbanLabel}
           </div>
         </div>
       );
@@ -179,7 +135,7 @@ function ProjectThumb({ project }: { project: (typeof PROJECTS)[number] }) {
             className="proj-badge"
             style={{ borderColor: "var(--border)", color: "var(--text-dim)" }}
           >
-            Bientôt
+            {projects.soonLabel}
           </span>
         </div>
       );
@@ -187,22 +143,19 @@ function ProjectThumb({ project }: { project: (typeof PROJECTS)[number] }) {
 }
 
 export default function ProjectsSection() {
-  const [activeFilter, setActiveFilter] = useState("Tous");
+  const [activeFilter, setActiveFilter] = useState(projects.filters[0]);
 
   return (
     <section id="projects">
       <div className="wrap">
-        <div className="section-tag">Portfolio</div>
+        <div className="section-tag">{projects.tag}</div>
         <h2 className="section-title">
-          Mes <span className="grad">projets</span>
+          {projects.titlePrefix} <span className="grad">{projects.titleHighlight}</span>
         </h2>
-        <p className="section-sub">
-          Une sélection de projets récents, la majorité construits avec Angular pour le
-          frontend et un backend Java / Node selon le contexte client.
-        </p>
+        <p className="section-sub">{projects.description}</p>
 
         <div className="filter-row">
-          {FILTERS.map((filter) => (
+          {projects.filters.map((filter) => (
             <button
               key={filter}
               className={`filter-pill${filter === "Angular" ? " angular-pill" : ""}${
@@ -216,7 +169,7 @@ export default function ProjectsSection() {
         </div>
 
         <div className="proj-grid">
-          {PROJECTS.map((project) => (
+          {projects.items.map((project) => (
             <div className="proj-card" key={project.title}>
               <ProjectThumb project={project} />
               <div className="proj-body">
@@ -229,9 +182,9 @@ export default function ProjectsSection() {
                 </div>
                 <div className="proj-links">
                   <a className="primary" href="#">
-                    Live Demo
+                    {project.demoLabel}
                   </a>
-                  <a href="#">GitHub</a>
+                  <a href="#">{project.codeLabel}</a>
                 </div>
               </div>
             </div>
@@ -249,12 +202,12 @@ export default function ProjectsSection() {
           }}
         >
           <p style={{ color: "var(--text-dim)", fontSize: ".88rem" }}>
-            Vous avez un projet en tête ?
+            {projects.footerLine1}
             <br />
-            Je suis toujours partant à discuter d&apos;idées.
+            {projects.footerLine2}
           </p>
           <a className="btn-primary" href="#contact">
-            Me contacter →
+            {projects.footerCta}
           </a>
         </div>
       </div>
