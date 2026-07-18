@@ -814,18 +814,6 @@ section#about {
   background: linear-gradient(150deg, rgba(139, 92, 246, 0.18), rgba(59, 130, 246, 0.1));
   border-bottom: 1px solid var(--border);
 }
-.proj-thumb .mini-bars {
-  display: flex;
-  gap: 6px;
-  align-items: flex-end;
-  height: 46px;
-}
-.proj-thumb .mini-bars i {
-  width: 9px;
-  background: var(--purple-2);
-  border-radius: 3px;
-  opacity: 0.8;
-}
 .proj-badge {
   position: absolute;
   top: 10px;

@@ -90,7 +90,7 @@
         "description": "SaaS de création de devis, contrats et factures pour freelances.",
         "tags": ["Angular", "Spring Boot", "PostgreSQL"],
         "angular": true,
-        "thumb": "bars",
+        "thumb": "invoice",
         "demoLabel": "Live Demo",
         "codeLabel": "GitHub"
       },
@@ -99,7 +99,7 @@
         "description": "Jeu multijoueur en temps réel avec narrateur vocal pour des parties immersives de Loups-Garous.",
         "tags": ["Next.js", "Socket.IO"],
         "angular": false,
-        "thumb": "cards",
+        "thumb": "moon",
         "demoLabel": "Live Demo",
         "codeLabel": "GitHub"
       },
@@ -108,7 +108,7 @@
         "description": "Messagerie instantanée avec salons et notifications.",
         "tags": ["Angular", "AdonisJS", "PostgreSQL"],
         "angular": true,
-        "thumb": "avatar",
+        "thumb": "chat",
         "demoLabel": "Live Demo",
         "codeLabel": "GitHub"
       },
@@ -117,7 +117,7 @@
         "description": "Plateforme de jeu du pendu en ligne offrant une expérience ludique avec un système de score.",
         "tags": ["React", "Vite"],
         "angular": false,
-        "thumb": "kanban",
+        "thumb": "hangman",
         "demoLabel": "Live Demo",
         "codeLabel": "GitHub"
       }
