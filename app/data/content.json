@@ -52,7 +52,7 @@
       { "icon": "nextjs", "label": "Next.js" },
       { "icon": "adonisjs", "label": "AdonisJS" },
       { "icon": "docker", "label": "Docker" },
-      { "icon": "hostinger", "label": "Hostinger" }
+      { "icon": "coolify", "label": "Coolify" }
     ]
   },
   "about": {
@@ -164,6 +164,7 @@
         "label": "Outils & DevOps",
         "skills": [
           { "name": "Docker", "color": "#2496ed" },
+          { "name": "Coolify", "color": "#6B16ED" },
           { "name": "Git", "color": "#f05033" }
         ]
       }
@@ -188,7 +189,7 @@
         "date": "Août 2023 — Juillet 2026",
         "title": "Développeur Full Stack",
         "company": "Kapela Constellation - Alternance (3 ans)",
-        "description": "Développement d'applications Angular / Spring Boot pour des clients variés, de la conception à la mise en production, ainsi que des projets en Laravel, Symfony et .NET."
+        "description": "Développement d'applications Angular / Spring Boot pour des clients variés, de la conception à la mise en production, ainsi que des projets en React, Laravel, Symfony et .NET."
       },
       {
         "date": "Janvier / Février 2023",

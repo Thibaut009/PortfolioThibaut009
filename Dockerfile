@@ -9,6 +9,11 @@ FROM node:22-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+
+# On indique à Docker de récupérer la variable envoyée par Coolify pendant le build
+ARG RESEND_API_KEY
+ENV RESEND_API_KEY=$RESEND_API_KEY
+
 RUN npm run build
 
 # 3. Run the app
