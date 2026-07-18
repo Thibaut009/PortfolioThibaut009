@@ -22,9 +22,9 @@
     "introPrefix": "Je suis",
     "name": "Thibaut",
     "role": "Full Stack Developer",
-    "descriptionPrefix": "Je conçois et développe des applications web modernes, performantes et scalables avec des expériences utilisateur exceptionnelles —",
+    "descriptionPrefix": "Je conçois et développe des applications web modernes, performantes et évolutives, en plaçant l'expérience utilisateur au cœur de chaque projet, avec",
     "descriptionHighlight": "Angular",
-    "descriptionSuffix": "en fer de lance côté frontend.",
+    "descriptionSuffix": "comme technologie de référence côté frontend et Spring Boot côté backend.",
     "chips": [
       { "label": "Angular", "color": "#dd0031" },
       { "label": "TypeScript", "color": "#3178c6" },
@@ -67,7 +67,7 @@
     "info": [
       { "label": "Nom", "value": "Thibaut" },
       { "label": "Email", "value": "gabet.thibaut@gmail.com" },
-      { "label": "Localisation", "value": "France" },
+      { "label": "Localisation", "value": "Lille, France" },
       { "label": "Disponibilité", "value": "Disponible pour travailler" }
     ],
     "cta": "Me contacter →",
@@ -241,9 +241,8 @@
     ],
     "certificationsLabel": "Certifications",
     "certifications": [
-      { "icon": "angular", "title": "Angular Certified Developer", "subtitle": "Certification officielle" },
-      { "icon": "☁️", "title": "AWS Certified Cloud Practitioner", "subtitle": "Amazon Web Services" },
-      { "icon": "📜", "title": "Scrum Fundamentals", "subtitle": "Agile / Scrum" }
+      { "icon": "🎓", "title": "Titre CDA", "subtitle": "Concepteur Développeur d'Applications" },
+      { "icon": "🔒", "title": "Attestation SecNum", "subtitle": "Sécurité informatique (ANSSI)" }
     ]
   },
   "contact": {
