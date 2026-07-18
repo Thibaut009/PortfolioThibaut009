@@ -1,6 +1,7 @@
+import SocialIcon from "./SocialIcon";
 import content from "../data/content.json";
 
-const { contact } = content;
+const { contact, hero } = content;
 const { form } = contact;
 
 export default function Contact() {
@@ -25,9 +26,9 @@ export default function Contact() {
               </div>
             ))}
             <div className="socials" style={{ marginTop: 24 }}>
-              {contact.socials.map((social) => (
-                <a href={social.href} key={social.label}>
-                  {social.label}
+              {hero.socials.map((social) => (
+                <a href={social.href} title={social.title} key={social.platform}>
+                  <SocialIcon platform={social.platform} />
                 </a>
               ))}
             </div>

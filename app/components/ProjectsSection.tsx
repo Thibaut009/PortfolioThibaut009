@@ -11,7 +11,7 @@ function ProjectThumb({ project }: { project: (typeof projects.items)[number] })
     case "bars":
       return (
         <div className="proj-thumb">
-          <span className="proj-badge">◈ Angular</span>
+          {project.angular && <span className="proj-badge">◈ Angular</span>}
           <div className="mini-bars">
             <i style={{ height: "60%" }} />
             <i style={{ height: "85%" }} />
@@ -30,7 +30,7 @@ function ProjectThumb({ project }: { project: (typeof projects.items)[number] })
               "linear-gradient(150deg, rgba(221,0,49,.15), rgba(139,92,246,.12))",
           }}
         >
-          <span className="proj-badge">◈ Angular</span>
+          {project.angular && <span className="proj-badge">◈ Angular</span>}
           <div style={{ display: "flex", gap: 8 }}>
             <div
               style={{
@@ -62,6 +62,7 @@ function ProjectThumb({ project }: { project: (typeof projects.items)[number] })
     case "avatar":
       return (
         <div className="proj-thumb">
+          {project.angular && <span className="proj-badge">◈ Angular</span>}
           <Image
             src="/avatar-character.png"
             alt="avatar"
@@ -79,7 +80,7 @@ function ProjectThumb({ project }: { project: (typeof projects.items)[number] })
     case "kanban":
       return (
         <div className="proj-thumb">
-          <span className="proj-badge">◈ Angular</span>
+          {project.angular && <span className="proj-badge">◈ Angular</span>}
           <div
             style={{
               width: "70%",
@@ -100,6 +101,7 @@ function ProjectThumb({ project }: { project: (typeof projects.items)[number] })
     case "lines":
       return (
         <div className="proj-thumb">
+          {project.angular && <span className="proj-badge">◈ Angular</span>}
           <div style={{ display: "flex", flexDirection: "column", gap: 6, width: "70%" }}>
             <div
               style={{
@@ -145,6 +147,11 @@ function ProjectThumb({ project }: { project: (typeof projects.items)[number] })
 export default function ProjectsSection() {
   const [activeFilter, setActiveFilter] = useState(projects.filters[0]);
 
+  const filteredItems =
+    activeFilter === "Angular"
+      ? projects.items.filter((project) => project.angular)
+      : projects.items;
+
   return (
     <section id="projects">
       <div className="wrap">
@@ -169,8 +176,8 @@ export default function ProjectsSection() {
         </div>
 
         <div className="proj-grid">
-          {projects.items.map((project) => (
-            <div className="proj-card" key={project.title}>
+          {filteredItems.map((project, index) => (
+            <div className="proj-card" key={`${project.title}-${index}`}>
               <ProjectThumb project={project} />
               <div className="proj-body">
                 <h4>{project.title}</h4>

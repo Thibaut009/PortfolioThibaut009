@@ -65,7 +65,7 @@
     "description": "Diplômé d'un Master en Développement Full Stack à MyDigitalSchool Lille, j'ai passé 3 ans en alternance chez Kapela Constellation en tant que Développeur Full Stack, où j'ai conçu et développé des applications web complètes, du frontend (Angular, React) au backend (Spring Boot, Laravel, Symfony, .NET). Aujourd'hui à la recherche d'un poste en CDI, à l'aise en gestion de projet, gestion des versions et conception de bases de données, j'aborde chaque problème avec un esprit d'analyse et de résolution rigoureux.",
     "avatarAlt": "Thibaut - avatar 3D développeur",
     "info": [
-      { "label": "Nom", "value": "Thibaut" },
+      { "label": "Nom", "value": "Thibaut Gabet" },
       { "label": "Email", "value": "gabet.thibaut@gmail.com" },
       { "label": "Localisation", "value": "Lille, France" },
       { "label": "Disponibilité", "value": "En recherche d'un CDI" }
@@ -86,56 +86,38 @@
     "filters": ["Tous", "Angular", "Frontend", "Backend", "Full Stack"],
     "items": [
       {
-        "title": "SaaS Dashboard",
-        "description": "Dashboard analytics moderne pour une gestion complète des données clients.",
-        "tags": ["Angular", "TypeScript", "Chart.js"],
+        "title": "Freelance Management SaaS",
+        "description": "SaaS de création de devis, contrats et factures pour freelances.",
+        "tags": ["Angular", "Spring Boot", "PostgreSQL"],
         "angular": true,
         "thumb": "bars",
         "demoLabel": "Live Demo",
         "codeLabel": "GitHub"
       },
       {
-        "title": "E-commerce Platform",
-        "description": "Plateforme e-commerce complète avec panier, paiement et dashboard admin.",
-        "tags": ["Angular", "NgRx", "Spring Boot"],
-        "angular": true,
+        "title": "Werewolf Gaming Platform",
+        "description": "Jeu multijoueur en temps réel avec narrateur vocal pour des parties immersives de Loups-Garous.",
+        "tags": ["Next.js", "Socket.IO"],
+        "angular": false,
         "thumb": "cards",
         "demoLabel": "Live Demo",
         "codeLabel": "GitHub"
       },
       {
-        "title": "Portfolio Template",
-        "description": "Template de portfolio moderne et entièrement personnalisable.",
-        "tags": ["Next.js", "Framer Motion"],
-        "angular": false,
+        "title": "Real-time Chat App",
+        "description": "Messagerie instantanée avec salons et notifications.",
+        "tags": ["Angular", "AdonisJS", "PostgreSQL"],
+        "angular": true,
         "thumb": "avatar",
         "demoLabel": "Live Demo",
         "codeLabel": "GitHub"
       },
       {
-        "title": "Task Management App",
-        "description": "Application de gestion de tâches façon Kanban avec drag & drop en temps réel.",
-        "tags": ["Angular", "Node.js", "Socket.io"],
-        "angular": true,
+        "title": "Hangman Gaming Platform",
+        "description": "Plateforme de jeu du pendu en ligne offrant une expérience ludique avec un système de score.",
+        "tags": ["React", "Vite"],
+        "angular": false,
         "thumb": "kanban",
-        "demoLabel": "Live Demo",
-        "codeLabel": "GitHub"
-      },
-      {
-        "title": "Real-time Chat App",
-        "description": "Messagerie instantanée avec salons, notifications et statuts de présence.",
-        "tags": ["React", "Node.js", "WebSocket"],
-        "angular": false,
-        "thumb": "lines",
-        "demoLabel": "Live Demo",
-        "codeLabel": "GitHub"
-      },
-      {
-        "title": "Landing Page",
-        "description": "Page d'atterrissage produit, optimisée conversion et performance.",
-        "tags": ["Angular", "Tailwind"],
-        "angular": false,
-        "thumb": "soon",
         "demoLabel": "Live Demo",
         "codeLabel": "GitHub"
       }
@@ -258,12 +240,6 @@
       { "icon": "📞", "label": "Téléphone", "value": "+33 7 81 30 74 97" },
       { "icon": "📍", "label": "Localisation", "value": "Lille, France" },
       { "icon": "🟢", "label": "Disponibilité", "value": "En recherche d'un CDI" }
-    ],
-    "socials": [
-      { "label": "in", "href": "#" },
-      { "label": "gh", "href": "#" },
-      { "label": "tw", "href": "#" },
-      { "label": "@", "href": "#" }
     ],
     "form": {
       "nameLabel": "Nom",
