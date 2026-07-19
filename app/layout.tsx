@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "500"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://thibaut009.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://thibaut009.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
