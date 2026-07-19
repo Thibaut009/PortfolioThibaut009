@@ -35,7 +35,7 @@
     "greeting": "Salut 👋",
     "introPrefix": "Je suis",
     "name": "Thibaut",
-    "role": "Full Stack Developer",
+    "role": "Développeur Full Stack",
     "descriptionPrefix": "Je conçois et développe des applications web modernes, performantes et évolutives, en plaçant l'expérience utilisateur au cœur de chaque projet, avec",
     "descriptionHighlight": "Angular",
     "descriptionSuffix": "comme technologie de référence côté frontend et Spring Boot côté backend.",
@@ -222,7 +222,7 @@
     "education": [
       {
         "date": "2024 — 2026",
-        "title": "MBA Développeur Full-stack", 
+        "title": "MBA Développeur Full Stack", 
         "company": "MyDigitalSchool, Lille"
       },
       {
