@@ -1,7 +1,21 @@
 {
   "meta": {
-    "title": "Thibaut | Full Stack Developer",
-    "description": "Portfolio de Thibaut, développeur Full Stack spécialisé Angular, TypeScript, Node.js et Spring Boot."
+    "title": "Thibaut Gabet | Développeur Full Stack Angular & Spring Boot",
+    "description": "Portfolio de Thibaut Gabet, développeur Full Stack basé en France, spécialisé Angular, Spring Boot, PostgreSQL et React/Next.js. Actuellement en recherche d'un poste en CDI.",
+    "keywords": [
+      "Thibaut Gabet",
+      "développeur full stack",
+      "développeur Angular",
+      "développeur Spring Boot",
+      "portfolio développeur",
+      "développeur web France",
+      "développeur Lille",
+      "Angular",
+      "Spring Boot",
+      "React",
+      "Next.js",
+      "PostgreSQL"
+    ]
   },
   "nav": {
     "logoText": "THIBAUT",

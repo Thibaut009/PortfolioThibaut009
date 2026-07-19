@@ -13,6 +13,8 @@ COPY . .
 # On indique à Docker de récupérer la variable envoyée par Coolify pendant le build
 ARG RESEND_API_KEY
 ENV RESEND_API_KEY=$RESEND_API_KEY
+ARG NEXT_PUBLIC_SITE_URL
+ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
 
 RUN npm run build
 
