@@ -16,6 +16,7 @@ export default function About() {
               alt={about.avatarAlt}
               width={327}
               height={772}
+              priority
               style={{
                 width: "45%",
                 height: "auto",

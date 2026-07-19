@@ -118,7 +118,7 @@
         "tags": ["React", "Vite"],
         "angular": false,
         "thumb": "hangman",
-        "demoUrl": "#",
+        "demoUrl": "https://jeux-du-pendu.thibaut009.com/",
         "demoLabel": "Live Demo",
         "codeLabel": "GitHub"
       }
