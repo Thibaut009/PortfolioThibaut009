@@ -46,7 +46,9 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        <button className="btn-cv">{cvButton}</button>
+        <a className="btn-cv" href="/cv-thibaut-gabet.pdf" download>
+          {cvButton}
+        </a>
         <button className="burger" aria-label={burgerLabel} onClick={() => setMenuOpen((v) => !v)}>
           ☰
         </button>
