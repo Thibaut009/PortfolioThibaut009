@@ -97,44 +97,48 @@
     "filters": ["Tous", "Angular", "Spring Boot", "React", "Next.js"],
     "items": [
       {
+        "slug": "wingflow",
         "title": "Freelance Management SaaS",
         "description": "SaaS de création de devis, contrats et factures pour freelances.",
         "tags": ["Angular", "Spring Boot", "PostgreSQL"],
         "angular": true,
         "thumb": "invoice",
         "demoUrl": "https://wingflow.thibaut009.com/",
-        "demoLabel": "Live Demo",
-        "codeLabel": "GitHub"
+        "demoLabel": "Voir le projet",
+        "summaryLabel": "Détails"
       },
       {
+        "slug": "moon-call",
         "title": "Werewolf Gaming Platform",
         "description": "Jeu multijoueur en temps réel avec narrateur vocal pour des parties immersives de Loups-Garous.",
         "tags": ["Next.js", "Socket.IO"],
         "angular": false,
         "thumb": "moon",
         "demoUrl": "https://moon-call.thibaut009.com/",
-        "demoLabel": "Live Demo",
-        "codeLabel": "GitHub"
+        "demoLabel": "Voir le projet",
+        "summaryLabel": "Détails"
       },
       {
+        "slug": "keychat",
         "title": "Real-time Chat App",
         "description": "Messagerie instantanée avec salons et notifications.",
         "tags": ["Angular", "AdonisJS", "PostgreSQL"],
         "angular": true,
         "thumb": "chat",
         "demoUrl": "https://keychat.thibaut009.com/",
-        "demoLabel": "Live Demo",
-        "codeLabel": "GitHub"
+        "demoLabel": "Voir le projet",
+        "summaryLabel": "Détails"
       },
       {
+        "slug": "jeu-du-pendu",
         "title": "Hangman Gaming Platform",
         "description": "Plateforme de jeu du pendu en ligne offrant une expérience ludique avec un système de score.",
         "tags": ["React", "Vite"],
         "angular": false,
         "thumb": "hangman",
         "demoUrl": "https://jeux-du-pendu.thibaut009.com/",
-        "demoLabel": "Live Demo",
-        "codeLabel": "GitHub"
+        "demoLabel": "Voir le projet",
+        "summaryLabel": "Détails"
       }
     ],
     "footerLine1": "Vous avez un projet en tête ?",
