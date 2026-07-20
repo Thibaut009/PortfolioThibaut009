@@ -1,0 +1,9 @@
+{
+  "featuresLabel": "Fonctionnalités clés",
+  "features": [
+    "Messagerie instantanée organisée par salons de discussion",
+    "Notifications en temps réel à l'arrivée de nouveaux messages",
+    "Authentification et gestion des comptes utilisateurs",
+    "Historique des conversations persistant en base de données"
+  ]
+}

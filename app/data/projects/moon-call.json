@@ -1,0 +1,65 @@
+{
+  "context": "MoonCall est une adaptation web multijoueur des Loups-Garous de Thiercelieux, jouable directement dans le navigateur sans installation ni création de compte. Un narrateur vocal anime la partie en lisant à voix haute chaque changement de phase, et le jeu implémente sept rôles (Loup-Garou, Villageois, Voyante, Sorcière, Petite Fille, Cupidon, Chasseur) avec leurs mécaniques propres, de la révélation des rôles jusqu'à la victoire d'un camp.",
+  "featuresLabel": "Fonctionnalités clés",
+  "features": [
+    "Parties multijoueurs en temps réel via Socket.IO, avec code de partie à 5 lettres",
+    "Narrateur vocal automatique à chaque changement de phase (Web Speech API)",
+    "Sept rôles jouables : Loup-Garou, Villageois, Voyante, Sorcière, Petite Fille, Cupidon, Chasseur",
+    "Configuration de la partie par le Host (nombre de loups, activation Voyante/Sorcière)",
+    "Anti-triche côté serveur : une seule inspection de la Voyante autorisée par nuit",
+    "Mécaniques dédiées : espionnage de la Petite Fille, couple de Cupidon avec mort en chaîne et troisième camp, tir immédiat du Chasseur à sa mort",
+    "Persistance de partie après rafraîchissement de page (rejoin automatique)",
+    "Détection automatique de la victoire d'un camp, y compris après les morts nocturnes",
+    "Gestion du lobby par le Host (expulsion d'un joueur, redémarrage de partie)"
+  ],
+  "stackLabel": "Stack technique",
+  "stack": [
+    { "name": "Next.js 16 (App Router)", "icon": "nextjs", "description": "Framework React utilisé pour l'interface et le routage de l'application." },
+    { "name": "Socket.IO", "icon": "socketio", "description": "Communication en temps réel entre les joueurs (phases, votes) via WebSockets." },
+    { "name": "React 19", "icon": "react", "description": "Bibliothèque utilisée pour construire l'interface utilisateur." },
+    { "name": "Tailwind CSS 4", "icon": "tailwindcss", "description": "Style de l'interface utilisateur." },
+    { "name": "Node.js", "icon": "nodejs", "description": "Environnement d'exécution du serveur de jeu." },
+    { "name": "TypeScript (tsx)", "icon": "typescript", "description": "Langage utilisé pour la logique des phases, des rôles et des votes." },
+    { "name": "Web Speech API", "icon": null, "description": "Synthèse vocale native du navigateur utilisée pour le narrateur." }
+  ],
+  "howToPlayLabel": "🎮 Comment jouer",
+  "howToPlay": {
+    "createLabel": "Créer une partie",
+    "createSteps": [
+      "Ouvre l'application et clique sur \"Créer une partie\"",
+      "Saisis ton prénom — tu deviens automatiquement le Host",
+      "Partage le code à 5 lettres affiché à l'écran avec tes amis"
+    ],
+    "joinLabel": "Rejoindre une partie",
+    "joinSteps": [
+      "Clique sur \"Rejoindre une partie\"",
+      "Saisis le code reçu et ton prénom",
+      "Attends que le Host lance la partie"
+    ],
+    "roundLabel": "Déroulement d'une manche",
+    "roundFlow": [
+      "Révélation des rôles",
+      "🌙 Nuit — Les Loups votent leur victime",
+      "🔮 Nuit — La Voyante inspecte un joueur",
+      "🧪 Nuit — La Sorcière utilise ses potions",
+      "☀️ Réveil — Le village apprend les morts de la nuit",
+      "🗳️ Vote du jour — Le village vote pour éliminer un suspect",
+      "📋 Résultat — L'éliminé révèle son identité"
+    ],
+    "victoryLabel": "Conditions de victoire",
+    "victory": [
+      "Villageois — Éliminer tous les loups-garous",
+      "Loups-Garous — Être en nombre égal ou supérieur aux villageois en vie"
+    ]
+  },
+  "rolesLabel": "🐺 Rôles disponibles",
+  "roles": [
+    { "icon": "🐺", "name": "Loup-Garou", "description": "Chaque nuit, désignez une victime avec les autres loups. Votre but : éliminer tous les villageois." },
+    { "icon": "👨", "name": "Villageois", "description": "Chaque jour, débattez et votez pour éliminer un loup-garou. Votre but : trouver les loups." },
+    { "icon": "🔮", "name": "Voyante", "description": "Chaque nuit, découvrez le rôle secret d'un joueur. Guidez les villageois sans vous trahir." },
+    { "icon": "🧪", "name": "Sorcière", "description": "Vous possédez une potion de vie et une potion de mort. Chacune, une seule fois par partie." },
+    { "icon": "👧", "name": "Petite Fille", "description": "Pendant que les loups choisissent leur victime, vous espionnez leurs votes et voyez leur identité." },
+    { "icon": "💘", "name": "Cupidon", "description": "Au début de la première nuit, désignez deux joueurs comme amoureux. S'ils sont les deux derniers en vie, ils gagnent ensemble." },
+    { "icon": "🏹", "name": "Chasseur", "description": "Quand vous mourez, vous emportez un joueur de votre choix dans la tombe." }
+  ]
+}

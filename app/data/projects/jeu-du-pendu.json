@@ -1,0 +1,36 @@
+{
+  "context": "Une version numérique du jeu du pendu : le mot à deviner est tiré aléatoirement d'une base de mots français fréquents via une API publique. Chaque manche se joue lettre par lettre ou en proposant le mot entier, avec un système de points et des statistiques sauvegardées par joueur dans le navigateur.",
+  "featuresLabel": "Fonctionnalités clés",
+  "features": [
+    "Mot à deviner tiré aléatoirement d'une base de mots français fréquents",
+    "Devine lettre par lettre ou propose le mot complet pour un bonus de points",
+    "6 essais maximum avant la défaite, avec une illustration du pendu qui évolue à chaque erreur",
+    "Système de points : lettres trouvées, bonus pour un mot complet, pénalité en cas de mauvaise proposition",
+    "Sauvegarde du score par joueur (victoires, défaites, parties jouées, points) dans le navigateur",
+    "Page Statistiques avec un graphique en barres par joueur",
+    "Option \"Continuer à jouer\" pour cumuler les points sur plusieurs manches",
+    "Effet sonore au lancement d'une partie"
+  ],
+  "stackLabel": "Stack technique",
+  "stack": [
+    { "name": "React 18", "icon": "react", "description": "Bibliothèque utilisée pour l'interface et la logique du jeu." },
+    { "name": "Vite", "icon": "vite", "description": "Outil de build et serveur de développement de l'application." },
+    { "name": "React Router", "icon": null, "description": "Navigation entre les pages Accueil, Jouer et Statistiques." },
+    { "name": "Chart.js", "icon": "chartjs", "description": "Graphique en barres affichant les statistiques de chaque joueur." },
+    { "name": "use-sound", "icon": null, "description": "Effet sonore joué au lancement d'une partie." }
+  ],
+  "howToPlayLabel": "🎮 Comment jouer",
+  "howToPlaySteps": [
+    "Lance le jeu et attends le chargement d'un mot aléatoire",
+    "Clique sur les lettres pour deviner le mot",
+    "Ou utilise l'option de proposition de mot complet pour gagner plus de points",
+    "À la fin d'une partie, enregistre ton score ou continue à jouer"
+  ],
+  "rulesLabel": "🧐 Règles du jeu",
+  "rules": [
+    "Chaque lettre correcte = 1 point",
+    "Mot complet trouvé uniquement grâce aux lettres = 2 points",
+    "Mot complet proposé directement et correct = 2 points + 1 point par lettre non révélée",
+    "Proposition de mot incorrecte = -2 points"
+  ]
+}
