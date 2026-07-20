@@ -207,19 +207,19 @@
         "date": "Août 2023 — Juillet 2026",
         "title": "Développeur Full Stack",
         "company": "Kapela Constellation - Alternance (3 ans)",
-        "description": "Développement d'applications Angular / Spring Boot pour des clients variés, de la conception à la mise en production, ainsi que des projets en React, Laravel, Symfony et .NET."
+        "description": "Développeur Full Stack en alternance chez Kapela pendant 3 ans, j’ai participé au développement et à l’évolution de sites web et d’applications métiers pour différents clients, de la conception à la mise en production. Mes missions couvraient l’analyse des besoins, le développement de fonctionnalités, le support et la maintenance corrective et évolutive des applications, l’optimisation des performances ainsi que la résolution d’anomalies techniques. Environnement technique : Angular, Spring Boot, React, Laravel, Symfony et .NET."
       },
       {
         "date": "Janvier / Février 2023",
         "title": "Développeur Full Stack",
         "company": "Kapela Constellation - Stage (5 semaines)",
-        "description": "Développement d'interfaces Angular modernes et performantes pour des applications métier à fort trafic."
+        "description": "Stage de 5 semaines en tant que développeur web chez Kapela (Groupe Constellation). Développement d'interfaces Angular modernes et performantes pour des applications métier à fort trafic. Participation à l'amélioration de l'expérience utilisateur, à l'intégration de composants et au respect des bonnes pratiques de développement front-end."
       },
       {
         "date": "Juin / Juillet 2022",
-        "title": "Développeur Frontend",
+        "title": "Développeur Front-End",
         "company": "Easyteam Constellation - Stage (6 semaines)",
-        "description": "Premières expériences en développement web, montée en compétences sur l'écosystème Angular et Node.js."
+        "description": "Stage de 6 semaines en tant que développeur web chez Easyteam (Groupe Constellation). Développement de fonctionnalités web, maintenance applicative et participation aux activités de l'équipe technique. Montée en compétences sur l'écosystème Angular et Node.js, ainsi que sur les bonnes pratiques de développement web."
       }
     ],
     "educationLabel": "Formation",
