@@ -1,5 +1,5 @@
 {
-  "context": "Wingflow (Freelance OS) est un SaaS de gestion d'activité pour freelances : clients, devis, factures et contrats, avec signature électronique conforme eIDAS, génération de PDF et facturation par abonnement via Stripe.",
+  "context": "Wingflow (Freelance OS) est un SaaS de gestion d'activité pour freelances : clients, devis, factures et contrats, avec signature électronique conforme eIDAS et génération de PDF.",
   "featuresLabel": "Fonctionnalités clés",
   "features": [
     "Gestion des clients (particuliers ou entreprises) avec règles de validation adaptées à chaque type",
@@ -7,7 +7,6 @@
     "Génération de factures PDF/A-3b avec Factur-X pour la facturation électronique",
     "Création d'une facture directement depuis un devis signé ou un contrat",
     "Envoi des documents par email depuis la boîte Gmail personnelle de chaque utilisateur",
-    "Facturation par abonnement via Stripe, avec 3 plans (Starter, Pro, Business)",
     "Tableau de bord : chiffre d'affaires, encours, devis en attente, factures en retard",
     "Authentification JWT avec refresh token et déconnexion sur tous les appareils"
   ],
@@ -18,19 +17,13 @@
     "Le client demande un code de vérification à 6 chiffres, envoyé par email (valable 15 minutes, 5 tentatives maximum)",
     "Une fois le code vérifié, le client signe ou refuse le document ; un hash SHA-256 du contenu garantit qu'il n'a pas été modifié depuis l'envoi"
   ],
-  "pricingLabel": "💳 Plans d'abonnement",
-  "plans": [
-    { "name": "Starter", "limits": ["5 clients", "10 devis / mois", "10 factures / mois", "5 contrats"] },
-    { "name": "Pro", "limits": ["Utilisation illimitée", "PDF personnalisé"] },
-    { "name": "Business", "limits": ["Tout Pro inclus", "Multi-utilisateurs", "Exports comptables", "Support prioritaire"] }
-  ],
   "stackLabel": "Stack technique",
   "stack": [
     { "name": "Angular", "icon": "angular", "description": "Framework utilisé pour construire l'interface utilisateur de l'application." },
-    { "name": "Spring Boot", "icon": "springboot", "description": "API backend et logique métier (devis, factures, contrats, abonnements)." },
+    { "name": "Spring Boot", "icon": "springboot", "description": "API backend et logique métier (devis, factures, contrats)." },
     { "name": "PostgreSQL", "icon": "postgresql", "description": "Base de données, avec migrations versionnées via Flyway." },
-    { "name": "Stripe", "icon": "stripe", "description": "Facturation par abonnement et gestion des paiements." },
     { "name": "JWT", "icon": "jwt", "description": "Authentification par access token et refresh token." },
+    { "name": "Tailwind CSS", "icon": "tailwindcss", "description": "Style de l'interface utilisateur." },
     { "name": "Coolify", "icon": "coolify", "description": "Déploiement et hébergement de l'application." }
   ]
 }

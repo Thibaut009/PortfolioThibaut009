@@ -1,9 +1,29 @@
 {
+  "context": "KeyChat est une messagerie instantanée organisée par salons : chaque salon se crée avec une clé unique et se rejoint via cette clé, les messages circulent en temps réel entre membres, et chaque nouveau message déclenche une notification push native.",
   "featuresLabel": "Fonctionnalités clés",
   "features": [
-    "Messagerie instantanée organisée par salons de discussion",
-    "Notifications en temps réel à l'arrivée de nouveaux messages",
-    "Authentification et gestion des comptes utilisateurs",
-    "Historique des conversations persistant en base de données"
+    "Authentification par token d'accès (inscription, connexion, déconnexion)",
+    "Création d'un salon de discussion avec une clé unique à partager",
+    "Rejoindre un salon existant à partir de sa clé",
+    "Messagerie en temps réel par salon via Socket.IO",
+    "Historique des messages avec l'auteur de chacun",
+    "Liste des membres par salon",
+    "Gestion du profil utilisateur"
+  ],
+  "notificationsLabel": "🔔 Notifications push",
+  "notificationsIntro": "Chaque nouveau message envoyé dans un salon déclenche une notification native pour les autres membres, délivrée par le navigateur même si l'application est fermée.",
+  "notificationsDetails": [
+    "Le navigateur s'abonne aux notifications via un service worker (Web Push API)",
+    "Le serveur envoie la notification à chaque abonné du salon (sauf l'auteur) avec la librairie web-push et des clés VAPID",
+    "La notification ouvre directement le salon concerné au clic"
+  ],
+  "stackLabel": "Stack technique",
+  "stack": [
+    { "name": "Angular", "icon": "angular", "description": "Frontend de l'application." },
+    { "name": "PrimeNG", "icon": "primeng", "description": "Bibliothèque de composants d'interface utilisée côté frontend." },
+    { "name": "AdonisJS", "icon": "adonisjs", "description": "Framework backend : authentification, API REST et validation des données." },
+    { "name": "PostgreSQL", "icon": "postgresql", "description": "Base de données de l'application." },
+    { "name": "Socket.IO", "icon": "socketio", "description": "Messagerie en temps réel entre les membres d'un salon." },
+    { "name": "Coolify", "icon": "coolify", "description": "Déploiement et hébergement de l'application." }
   ]
 }

@@ -50,22 +50,6 @@ export default function WingflowPage() {
       </div>
 
       <div className="project-detail-section">
-        <h3>{details.pricingLabel}</h3>
-        <div className="plans-grid">
-          {details.plans.map((plan) => (
-            <div className="plan-card" key={plan.name}>
-              <h4>{plan.name}</h4>
-              <ul>
-                {plan.limits.map((limit) => (
-                  <li key={limit}>{limit}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="project-detail-section">
         <h3>{details.stackLabel}</h3>
         <dl className="project-detail-stack-explained">
           {details.stack.map((tech) => (

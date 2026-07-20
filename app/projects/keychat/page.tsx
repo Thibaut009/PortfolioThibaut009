@@ -3,6 +3,7 @@ import Link from "next/link";
 import content from "../../data/content.json";
 import details from "../../data/projects/keychat.json";
 import ProjectThumb from "../../components/ProjectThumb";
+import TechIcon from "../../components/TechIcon";
 
 const project = content.projects.items.find((item) => item.slug === "keychat")!;
 
@@ -16,7 +17,7 @@ export default function KeychatPage() {
     <>
       <div className="project-detail-header">
         <h1>{project.title}</h1>
-        <p>{project.description}</p>
+        <p>{details.context}</p>
       </div>
 
       <div className="project-detail-thumb">
@@ -33,12 +34,32 @@ export default function KeychatPage() {
       </div>
 
       <div className="project-detail-section">
-        <h3>Stack technique</h3>
-        <div className="project-detail-stack proj-tags">
-          {project.tags.map((tag) => (
-            <span key={tag}>{tag}</span>
+        <h3>{details.notificationsLabel}</h3>
+        <p style={{ color: "var(--text-dim)", fontSize: ".92rem", lineHeight: 1.6, marginBottom: 18 }}>
+          {details.notificationsIntro}
+        </p>
+        <ul>
+          {details.notificationsDetails.map((detail) => (
+            <li key={detail}>{detail}</li>
           ))}
-        </div>
+        </ul>
+      </div>
+
+      <div className="project-detail-section">
+        <h3>{details.stackLabel}</h3>
+        <dl className="project-detail-stack-explained">
+          {details.stack.map((tech) => (
+            <div key={tech.name}>
+              <div className="ic">
+                <TechIcon name={tech.icon} size={28} />
+              </div>
+              <div>
+                <dt>{tech.name}</dt>
+                <dd>{tech.description}</dd>
+              </div>
+            </div>
+          ))}
+        </dl>
       </div>
 
       <div className="project-detail-actions">
