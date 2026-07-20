@@ -15,9 +15,9 @@
   "stack": [
     { "name": "React 18", "icon": "react", "description": "Bibliothèque utilisée pour l'interface et la logique du jeu." },
     { "name": "Vite", "icon": "vite", "description": "Outil de build et serveur de développement de l'application." },
-    { "name": "React Router", "icon": null, "description": "Navigation entre les pages Accueil, Jouer et Statistiques." },
     { "name": "Chart.js", "icon": "chartjs", "description": "Graphique en barres affichant les statistiques de chaque joueur." },
-    { "name": "use-sound", "icon": null, "description": "Effet sonore joué au lancement d'une partie." }
+    { "name": "use-sound", "icon": null, "description": "Effet sonore joué au lancement d'une partie." },
+    { "name": "Coolify", "icon": "coolify", "description": "Déploiement et hébergement de l'application." }
   ],
   "howToPlayLabel": "🎮 Comment jouer",
   "howToPlaySteps": [

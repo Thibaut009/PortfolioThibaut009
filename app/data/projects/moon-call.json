@@ -14,13 +14,12 @@
   ],
   "stackLabel": "Stack technique",
   "stack": [
-    { "name": "Next.js 16 (App Router)", "icon": "nextjs", "description": "Framework React utilisé pour l'interface et le routage de l'application." },
+    { "name": "Next.js", "icon": "nextjs", "description": "Framework React utilisé pour l'interface et le routage de l'application." },
     { "name": "Socket.IO", "icon": "socketio", "description": "Communication en temps réel entre les joueurs (phases, votes) via WebSockets." },
-    { "name": "React 19", "icon": "react", "description": "Bibliothèque utilisée pour construire l'interface utilisateur." },
     { "name": "Tailwind CSS 4", "icon": "tailwindcss", "description": "Style de l'interface utilisateur." },
-    { "name": "Node.js", "icon": "nodejs", "description": "Environnement d'exécution du serveur de jeu." },
     { "name": "TypeScript (tsx)", "icon": "typescript", "description": "Langage utilisé pour la logique des phases, des rôles et des votes." },
-    { "name": "Web Speech API", "icon": null, "description": "Synthèse vocale native du navigateur utilisée pour le narrateur." }
+    { "name": "Web Speech API", "icon": null, "description": "Synthèse vocale native du navigateur utilisée pour le narrateur." },
+    { "name": "Coolify", "icon": "coolify", "description": "Déploiement et hébergement de l'application." }
   ],
   "howToPlayLabel": "🎮 Comment jouer",
   "howToPlay": {
